@@ -1,0 +1,30 @@
+
+/*background-xxx用来指定背景的相关属性*/
+#topDiv{width:100%;height:8%;background-color:#4d4d4d;}
+
+#rightDiv{width:80%;height:88%;float:left;}
+   #rightDiv_top{height:90%;}
+	  /*table不是块元素，如果不通过display设置为block，则无法设置行高*/
+	  #table{width:100%;text-align:center;}
+	   .table_message{border:1px solid green;}
+   #rightDiv_bottom{height:10%;border:1px solid #000;}
+      #rightDiv_bottom li{width:25%;height:60px;float:left;line-height:60px;text-align:center;}
+   
+/*color设置的是文本的颜色，float-xxx:指定当前区域的浮动方向，*/
+#leftDiv{width:20%;height:88%;background-color:#474747;color:#fff;float:left;} 
+
+/*font-xxx属性用来指定文本字体的样式*/
+h1{font-size:25px;font-weight:normal;}
+
+h3{font-size:20px;font-weight:normal;}
+
+/*text-align：指定当前区域中文本的位置，line-height指定这个div区域中一行的高度*/
+.title{width:100%;height:50px;text-align:center;line-height:50px;}
+
+/*border指定边框，三要素:线型、大小、颜色。 text-indent指定文本缩进*/
+.first_title{height:45px;border-top:1px solid green;line-height:45px;text-indent:60px;} 
+
+.second_list{display:none;}
+
+.second_item{height:30px;background-color:#333;line-height:30px;text-indent:75px;}
+
