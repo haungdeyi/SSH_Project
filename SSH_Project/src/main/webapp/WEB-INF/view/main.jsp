@@ -83,17 +83,12 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
          <div id="rightDiv_top">
           <table id="table">
             <thead>
-              
-            </thead>
-            <tbody id="refresh">
               <tr>
                 <td class="table_message">用户名</td>
                 <td class="table_message">密码</td>
               </tr>
-              <tr>
-                <td>二狗</td>
-                <td>123</td>
-              </tr>
+            </thead>
+            <tbody id="refresh">
             </tbody>
           </table>
         </div>
@@ -123,6 +118,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     	   	$(this).find("ul").css("display","none");
     	   	$(this).css("background-color","");
     	   });
+    	   
+    	   refresh();
        });
 
        function refresh(){

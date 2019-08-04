@@ -51,8 +51,8 @@
              <prop key="hibernate.format_sql">true</prop>
              <!-- 指定创建表的策略 -->
              <prop key="hibernate.hbm2ddl.auto">update</prop>
-             <!-- 配置数据库的方言 -->
-             <prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>  
+             <!-- 配置数据库的方言，方言需要与数据库的存储引擎对应，否则无法自动创建表 -->
+             <prop key="hibernate.dialect">org.hibernate.dialect.MySQL5InnoDBDialect</prop>  
            </props>
        </property>
        

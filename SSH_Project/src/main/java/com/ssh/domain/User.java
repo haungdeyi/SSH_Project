@@ -1,6 +1,11 @@
 package com.ssh.domain;
 
-public class User {
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="user")
+public class User extends UuidEntity{
 
 	private String name;
 	private String password;
