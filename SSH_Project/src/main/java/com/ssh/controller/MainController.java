@@ -18,19 +18,16 @@ import com.ssh.service.CommonService;
 @RequestMapping("/")
 public class MainController {
 	
-	@Resource(name="commonService")
-    private CommonService service;
-
 	@RequestMapping("linkToMainPage")
 	public String linkToMainPage() {
 		return "main";
 	}
 	
-	@RequestMapping("refresh")
+	/*@RequestMapping("refresh")
 	@ResponseBody
 	public List<? extends UuidEntity> refresh() throws Exception{
 	    List<? extends UuidEntity> list = service.findByJpql(User.class, new String[] {"name","password"}, "ถþนท",null);
 		return list;
-	}
+	}*/
      
 }

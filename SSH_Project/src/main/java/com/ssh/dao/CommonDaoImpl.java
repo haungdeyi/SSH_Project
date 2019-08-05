@@ -26,9 +26,8 @@ public class CommonDaoImpl implements CommonDao{
 		this.entityManager = entityManager;
 	}
 
-	public boolean persit(UuidEntity entity) {
+	public void persit(UuidEntity entity) {
 		entityManager.persist(entity);
-		return false;
 	}
 
 	public UuidEntity merge(UuidEntity entity) {

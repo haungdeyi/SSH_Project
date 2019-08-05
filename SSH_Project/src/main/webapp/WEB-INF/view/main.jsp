@@ -94,7 +94,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
         </div>
         <div id="rightDiv_bottom">
            <ul>
-             <li><a href="#">总共</a></li>
+             <li><a href="#" class="btn">总共</a></li>
              <li><a href="#">当前页</a></li>
              <li><a href="#">上一页</a></li>
              <li><a href="#">下一页</a></li>
@@ -119,7 +119,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     	   	$(this).css("background-color","");
     	   });
     	   
-    	   refresh();
+    	   //refresh();
        });
 
        function refresh(){

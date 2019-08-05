@@ -1,0 +1,12 @@
+  
+  #parent-div{width:100%;height:100%;}
+  
+  #left-div{background-color:#515151;width:15%;height:100%;float:left;}
+     #headPohto{margin:5px;}
+     
+     #firstmenulist{margin:20px;}
+       #secondmenulist {display:none;}
+  
+  #right-top-div{width:85%;height:15%;float:left;border:1px solid;}
+  
+  #right-down-div{width:85%;height:85%;float:left;border:1px solid;}

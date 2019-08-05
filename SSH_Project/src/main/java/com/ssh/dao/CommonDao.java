@@ -7,7 +7,7 @@ import com.ssh.domain.UuidEntity;
 public interface CommonDao {
     
 	//保存实体
-	public boolean persit(UuidEntity entity);
+	public void persit(UuidEntity entity);
 	
 	//更新实体
 	public UuidEntity merge(UuidEntity entity);
