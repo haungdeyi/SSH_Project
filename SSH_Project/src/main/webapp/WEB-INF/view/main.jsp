@@ -15,7 +15,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
        <meta http-equiv="description" content="This is my page">
        <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/resetDefaultCss.css">
        <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/main.css">
-       <script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery-1.5.2.js"></script>
+       <script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery-3.4.1.js"></script>
    </head>
    <body>
         <div id="topDiv">顶部</div>

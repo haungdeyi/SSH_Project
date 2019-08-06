@@ -20,7 +20,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
        <meta http-equiv="description" content="This is my page">
        <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/bootstrap.css">
        <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/workspace.css">
-       <script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery-1.5.2.js"></script>
+       <script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery-3.4.1.js"></script>
        <script type="text/javascript" src="${pageContext.request.contextPath}/js/bootstrap.js"></script>
        <script type="text/javascript" src="${pageContext.request.contextPath}/js/workspace.js"></script>
    </head>
@@ -35,8 +35,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                 <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
               </p>
            </div>
-           <div class="container">
-              <ul id="firstmenulist" class="list-unstyled nav nav-pills nav-stacked lead">
+           <div>
+              <ul id="firstmenulist" class="list-unstyled lead">
                 <li>业主管理<span class="glyphicon glyphicon-chevron-right"></span>
                    <ul id="secondmenulist" class="list-unstyled">
                      <li><a class="btn" href="#">录入业主信息</a></li>
@@ -74,15 +74,60 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                 
                 <li>人事管理<span class="glyphicon glyphicon-chevron-right"></span>
                    <ul id="secondmenulist" class="list-unstyled">
-                      <li><a class="btn" href="#">人工管理</a></li>
+                      <li><a class="btn" href="#">员工管理</a></li>
                       <li><a class="btn" href="#">请假申请</a></li>
                    </ul>
                 </li>
               </ul>
            </div>
          </div>
-         <div id="right-top-div" ><button class="btn btn-success" onclick="test()">测试</button></div>
-         <div id="right-down-div">右下</div>
+         <div id="right-top-div">
+           <div class="container">
+              <p class="row">尼玛</p>
+              <div id="dropdown-menu-div" class="dropdown bg-info">
+                 <span id="toggle" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                                 个人设置<span class="caret"></span>
+                 </span>
+                 <ul class="dropdown-menu" role="menu" aria-labelledby="toggle">
+                   <li><a href="#">个人信息</a></li>
+                   <li><a href="#">我的任务</a></li>
+                   <li><a href="#">我的积分</a></li>
+                   <li><a href="#">我的信息</a></li>
+                 </ul>
+              </div>
+              <span id="login" class="bg-success"><a href="#">登录</a></span>
+              <span id="regist"><a href="#">注册</a></span>
+           </div>
+         </button></div>
+         <div id="right-down-div">
+           <div id="table-div">
+             <p class="bg-success lead">用户信息</p>
+             <table id="right-down-div-table" class="table table-bordered">
+	              <thead>
+	                <tr>
+	                  <td>用户名</td>
+	                  <td>性别</td>
+	                  <td>年龄</td>
+	                </tr>
+	              </thead>
+	              
+	              <tbody>
+	                <tr>
+	                  <td>二狗子</td>
+	                  <td>男</td>
+	                  <td>250</td>
+	                </tr>
+	              </tbody>
+             </table>
+           </div>
+           
+           <div id="bottom-div">
+              <a class="btn btn-default" disabled="disabled" href="#">总共[]页</a>
+              <a class="btn btn-default" href="#">当前[]页</a>
+              <a class="btn btn-default" href="#">上一页</a>
+              <a class="btn btn-default" href="#">下一页</a>
+           </div> 
+         </div>
        </div>
    </body>
 </html>
