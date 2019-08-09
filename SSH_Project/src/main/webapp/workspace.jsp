@@ -95,16 +95,19 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                    <li><a href="#">我的信息</a></li>
                  </ul>
               </div>
-              <span id="login" class="bg-success"><a href="#">登录</a></span>
+              <span id="login" class="bg-success"><a href="${pageContext.request.contextPath}/login.jsp">登录</a></span>
               <span id="regist"><a href="#">注册</a></span>
            </div>
          </button></div>
          <div id="right-down-div">
            <div id="table-div">
              <p class="bg-success lead">用户信息</p>
-             <table id="right-down-div-table" class="table table-bordered">
+             <button id="submit" class="btn btn-success" onclick="submit();">确定</button>
+             <form action="${pageContext.request.contextPath}/linkToMainPage">
+                 <table id="right-down-div-table" class="table table-bordered">
 	              <thead>
 	                <tr>
+	                  <td><input type="checkbox" id="checkall"></td>
 	                  <td>用户名</td>
 	                  <td>性别</td>
 	                  <td>年龄</td>
@@ -113,12 +116,21 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	              
 	              <tbody>
 	                <tr>
+	                  <td><input type="checkbox" name="ids" value="aaa"></td>
 	                  <td>二狗子</td>
 	                  <td>男</td>
 	                  <td>250</td>
 	                </tr>
+	                
+	                 <tr>
+	                  <td><input type="checkbox" name="ids" value="bbb"></td>
+	                  <td>麻雷子</td>
+	                  <td>女</td>
+	                  <td>251</td>
+	                </tr>
 	              </tbody>
              </table>
+             </form>
            </div>
            
            <div id="bottom-div">

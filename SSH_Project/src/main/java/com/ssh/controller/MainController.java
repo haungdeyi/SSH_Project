@@ -19,7 +19,9 @@ import com.ssh.service.CommonService;
 public class MainController {
 	
 	@RequestMapping("linkToMainPage")
-	public String linkToMainPage() {
+	@ResponseBody
+	public String linkToMainPage(String ids) {
+		System.out.println(ids);
 		return "main";
 	}
 	
