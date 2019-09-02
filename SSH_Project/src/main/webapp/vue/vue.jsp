@@ -36,7 +36,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
         <p v-html>{{msg2}}</p>
         
         <!-- v-bind用于绑定变量。可以简写为: -->
-        <input type="button" value="按钮" v-bind:title="button_title"/>
+        <input class="btn btn-danger" type="button" value="按钮" v-bind:title="button_title"/>
         
         <!-- v-if用于判断 -->
         <div v-if="msg.length > 10">条件为真时我会出现</div>
