@@ -1,35 +1,19 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%
-String path = request.getContextPath();
-String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
-%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-
+<%@ page language="java" pageEncoding="UTF-8"%>
+<%@ include file="/ref/taglib.jsp" %>
 <html>
-   <head>
-       <base href="<%=basePath%>">    
-       <title>insert title in here</title>
-       <meta http-equiv="X-UA-Compatible" content="IE=edge">
-       <!--响应式布局-->
-       <meta name="viewport" content="width=device-width, initial-scale=1">        
-       <meta http-equiv="pragma" content="no-cache">
-       <meta http-equiv="cache-control" content="no-cache">
-       <meta http-equiv="expires" content="0">    
-       <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
-       <meta http-equiv="description" content="This is my page">
-       <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/bootstrap.css">
-       <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/workspace.css">
-       <script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery-3.4.1.js"></script>
-       <script type="text/javascript" src="${pageContext.request.contextPath}/js/bootstrap.js"></script>
-       <script type="text/javascript" src="${pageContext.request.contextPath}/js/workspace.js"></script>
-   </head>
-
-   <body>
-       <div id="parent-div">
+  <head>
+    <%@ include file="/ref/header.jsp" %>
+    <!-- 页面自定义的css和js文件放这里 -->
+    <link rel="stylesheet" type="text/css" href="${contextPath}/css/workspace.css">
+    <script type="text/javascript" src="${contextPath}/js/workspace.js"></script>
+    <title></title>
+  </head>
+  
+  <body>
+     <div id="parent-div">
          <div id="left-div" >
            <div id="headPohto" calss="container">
-              <img class="img-responsive img-circle" alt="图片呢？？" src="${pageContext.request.contextPath}/image/3.jpg"/>
+              <img class="img-responsive img-circle" alt="图片呢？？" src="${contextPath}/image/3.jpg"/>
               <p style="text-align:center;margin:0;">用户名</p>
               <p style="text-align:center;">用户角色
                 <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
@@ -141,5 +125,5 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
            </div> 
          </div>
        </div>
-   </body>
+  </body>
 </html>
