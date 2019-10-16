@@ -1,7 +1,7 @@
   $(function(){
 	  var firstLi = $("#firstmenulist li");
 	  firstLi.mouseover(function(){
-		//将当前菜单展开
+		//将当前菜单展开，this指向的是原生的js对象
 		$(this).find("ul").css("display","block");
 		//图标转为向下
 		$(this).find("span").removeClass("glyphicon-chevron-right");

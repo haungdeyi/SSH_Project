@@ -28,7 +28,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
    <body>
        <div id="parent-div">
          <div id="left-div" >
-           <div id="headPohto" calss="container">
+           <div id="headPhoto" calss="container">
               <img class="img-responsive img-circle" alt="图片呢？？" src="${pageContext.request.contextPath}/image/3.jpg"/>
               <p style="text-align:center;margin:0;">用户名</p>
               <p style="text-align:center;">用户角色

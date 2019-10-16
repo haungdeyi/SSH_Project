@@ -293,6 +293,11 @@
 	    <artifactId>mysql-connector-java</artifactId>
 	    <version>5.1.46</version>
     </dependency>
+    
+    <!-- 使用shiro权限控制框架 -->
+   <!--  <dependency>
+    
+    </dependency> -->
   </dependencies>
   
   <!-- 使用插件 -->
